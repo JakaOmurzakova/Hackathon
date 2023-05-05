@@ -1,0 +1,50 @@
+body {
+  background: url(https://avatars.mds.yandex.net/i?id=48f55dee554ff99ab2a87e480e1345d09d416061-8552056-images-thumbs&n=13);
+  background-size: cover;
+  font-family: var(--main-family);
+  font-weight: 600;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features h2:hover {
+  background-color: brown;
+  font-weight: bold;
+}
+.list {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  animation-name: list;
+  animation-duration: 15s;
+  animation-timing-function: calc(1);
+  animation-iteration-count: infinite;
+}
+
+.card-text::after {
+  content: "😜";
+}
+
+@keyframes list {
+  0% {
+    display: none;
+  }
+
+  100% {
+    color: red;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navbar-nav {
+    display: none;
+  }
+}
